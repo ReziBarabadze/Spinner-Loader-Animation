@@ -1,0 +1,25 @@
+body{
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+  background-color: #d5d0d6;
+}
+
+
+.spinner{
+  display: inline-block;
+  width: 112px;
+  height: 112px;
+  /* background-color: red; */
+  border-radius: 50%;
+  border: 6.4px solid #d5d0d6;
+  border-left-color: #7f0099;
+  border-right-color: #7f0099;
+  box-shadow: 0 0 10px #7f0099;
+  animation: animateSpin .8s ease-in-out infinite;
+}
+@keyframes animateSpin{
+  100%{
+    transform: rotate(360deg);
+  }
+}
